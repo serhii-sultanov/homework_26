@@ -27,10 +27,12 @@ const getBackgroundColor = (color) => {
   }
 };
 
-const StyledCloseButton = styled(CloseIcon)`
+const StyledCloseButton = styled.button`
   position: absolute;
   right: 35px;
   cursor: pointer;
+  background: none;
+  border: none;
 `;
 
 const Alert = ({ color, onClose, children }) => {
